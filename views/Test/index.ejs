@@ -1,0 +1,29 @@
+<div class="container">
+	<h3>Test Listing</h3>
+	<table class='table table-hover table-condensed'>
+	<tr>
+
+	<th> name </th>
+
+	<th></th>
+	<th></th>
+	<th></th>
+</tr>
+	<% _.forEach(tests, function(test) { %>
+    		<tr data-id="<%=test.id %>" data-model="test">
+		
+			<td><%= test.name%></td>
+		
+			<td><a href="/test/show/<%=test.id %>"  class="btn btn-primary btn-sm" role="button">Show</a></td>
+			<td><a href="/test/edit/<%=test.id %>"  class="btn btn-primary btn-sm" role="button">Edit</a></td>
+
+			<td><form action="/test/destroy/<%=test.id %>" method="POST">
+				<input type="hidden" name="_method" value="delete"/>
+				<input type="submit" value="Delete"  class="btn btn-danger btn-sm" role="button"/>
+			</form></td>
+		</tr>
+<% }) %>
+	</table>
+	<a href="/test/new/" class="btn btn-success btn-sm" role="button">New Test</a> |
+	<a href="/">all scaffolds</a>
+</div>

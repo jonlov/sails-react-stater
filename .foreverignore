@@ -1,0 +1,5 @@
+**/.tmp/**
+**/assets/**
+**/views/**
+**/tasks/pipeline.js
+**/node_modules/**

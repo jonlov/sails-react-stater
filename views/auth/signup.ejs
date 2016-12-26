@@ -1,0 +1,24 @@
+<% blocks.title=__('Sign up'); blocks.hideAll=true %>
+    <div class="table-struct full-width full-height">
+        <div class="table-cell vertical-align-middle">
+            <div class="auth-form  ml-auto mr-auto no-float">
+                <div class="panel panel-default card-view mb-0">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <h6 class="panel-title txt-dark"><%= __('Sign up') %></h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-wrapper collapse in">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12">
+                                    <turboRender script="Auth" module="SignUp" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

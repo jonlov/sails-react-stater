@@ -1,0 +1,22 @@
+	<form action="/test/update/<%=test.id%>" method="POST" class="edit">
+	<div class="form-group">
+		<h2> editing a test... </h2>
+		<% if(flash && flash.err) { %>
+<ul class="alert alert-success">
+<% Object.keys(flash.err).forEach(function(error) { %>
+<li><%- JSON.stringify(flash.err[error]) %></li>
+<% }) %>
+</ul>
+<% } %>
+		
+	<div class="form-group" style="width: 400px;">
+	<label>name</label>
+	<input value="<%= test.name %>" name="name" type="text" class="form-control"/>
+	</div>
+
+		</div>
+		<input type="submit" value="Update Test" class="btn btn-default"/>
+		<a href="/test/show/<%=test.id %>" class="btn btn-danger">Cancel</a>
+	</form>
+	
+	

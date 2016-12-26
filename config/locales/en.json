@@ -1,0 +1,9 @@
+{
+	"Welcome": "Welcome",
+	"A brand new app.": "A brand new app.",
+	"All.Fields.Required": "All the fields are required.",
+	"Specific.Field.Required": "%s is required.",
+	"Error.Identifier.notFound": "Username or email not found.",
+	"Error.Password.Wrong": "Invalid password.",
+	"Success.LoggedIn": "Logged in successfully."
+}

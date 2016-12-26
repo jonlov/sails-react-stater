@@ -1,0 +1,5 @@
+<% if(!req.user) { %>
+    <%- partial('about') %>
+        <% } else { %>
+            <%- partial('bookings') %>
+            <% } %>

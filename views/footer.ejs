@@ -1,0 +1,23 @@
+<!-- Footer -->
+<footer class="footer container-fluid pl-30 pr-30">
+    <div class="row">
+        <div class="col-xs-8">
+            <a href="index.html" class="brand mr-30 hidden-xs">
+                <!-- <img src="/img/logo-sm.png" alt="logo" /> -->
+            </a>
+            <ul class="footer-link nav navbar-nav">
+                <li class="logo-footer"><a href="/about"><%= __('about') %></a></li>
+                <li class="logo-footer"><a href="/help"><%= __('help') %></a></li>
+                <li class="logo-footer"><a href="/policies/terms"><%= __('terms') %><span class="text-lowercase"> <%= __('and') %> </span><%= __('conditions') %></a></li>
+                <li class="logo-footer"><a href="/policies/privacy"><%= __('privacy') %></a></li>
+                <li class="logo-footer"><a href="/admin"><%= __('admin') %></a></li>
+            </ul>
+        </div>
+        <div class="col-xs-4 text-right">
+            <p>
+                <%= viewsVars.getYear() %> &copy;
+                    <%= viewsVars.legalCompanyName %>.</p>
+        </div>
+    </div>
+</footer>
+<!-- /Footer -->
